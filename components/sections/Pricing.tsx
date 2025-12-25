@@ -1,16 +1,15 @@
+'use client';
+
 import React from 'react';
 import { PricingTierProps } from '@/types/types';
 import { Check } from 'lucide-react';
-
-interface PricingProps {
-  onSignupClick: () => void;
-}
+import { useSmoothScroll } from '@/hooks/useSmoothScroll';
 
 const PricingCard: React.FC<PricingTierProps & { onAction?: () => void }> = ({ name, price, features, isPopular, comingSoon, disabled, ctaText = "Choisir", onAction }) => {
   return (
     <div className={`relative p-8 rounded-2xl transition-all duration-300 flex flex-col h-full ${
-        isPopular 
-        ? 'bg-white border-2 border-primary-500 shadow-xl scale-105 z-10' 
+        isPopular
+        ? 'bg-white border-2 border-primary-500 shadow-xl scale-105 z-10'
         : 'bg-neutral-50 border border-neutral-200 opacity-90'
     }`}>
       {isPopular && (
@@ -18,7 +17,7 @@ const PricingCard: React.FC<PricingTierProps & { onAction?: () => void }> = ({ n
           Actuellement
         </div>
       )}
-      
+
       <div className="mb-6">
         <h3 className="text-lg font-bold text-neutral-900 mb-2 flex items-center gap-2">
             {name}
@@ -39,12 +38,12 @@ const PricingCard: React.FC<PricingTierProps & { onAction?: () => void }> = ({ n
         ))}
       </ul>
 
-      <button 
+      <button
         disabled={disabled}
         onClick={onAction}
         className={`w-full py-3 rounded-xl font-bold text-sm transition-colors ${
-            isPopular 
-            ? 'bg-brand-gradient text-white hover:opacity-90 shadow-lg' 
+            isPopular
+            ? 'bg-brand-gradient text-white hover:opacity-90 shadow-lg'
             : 'bg-white border border-neutral-300 text-neutral-400 cursor-not-allowed'
         }`}
       >
@@ -54,9 +53,11 @@ const PricingCard: React.FC<PricingTierProps & { onAction?: () => void }> = ({ n
   );
 };
 
-export const Pricing: React.FC<PricingProps> = ({ onSignupClick }) => {
+export const Pricing: React.FC = () => {
+  const { scrollToFinalCta } = useSmoothScroll();
+
   return (
-    <section id="pricing" className="py-20 bg-neutral-50">
+    <section id="pricing" className="py-20 bg-neutral-50 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-16">
            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">Tarifs à venir</h2>
@@ -66,7 +67,7 @@ export const Pricing: React.FC<PricingProps> = ({ onSignupClick }) => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-center">
-            <PricingCard 
+            <PricingCard
                 name="Free Beta"
                 price="0€"
                 features={[
@@ -77,10 +78,10 @@ export const Pricing: React.FC<PricingProps> = ({ onSignupClick }) => {
                 ]}
                 isPopular={true}
                 ctaText="Commencer Gratuitement"
-                onAction={onSignupClick}
+                onAction={scrollToFinalCta}
             />
-            
-            <PricingCard 
+
+            <PricingCard
                 name="Pro"
                 price="~9€"
                 features={[
@@ -95,7 +96,7 @@ export const Pricing: React.FC<PricingProps> = ({ onSignupClick }) => {
                 ctaText="Bientôt disponible"
             />
 
-            <PricingCard 
+            <PricingCard
                 name="Family"
                 price="~15€"
                 features={[
@@ -110,9 +111,9 @@ export const Pricing: React.FC<PricingProps> = ({ onSignupClick }) => {
                 ctaText="Bientôt disponible"
             />
         </div>
-        
+
         <p className="text-center text-sm text-primary-600 font-medium mt-12 bg-primary-50 inline-block px-4 py-2 rounded-full mx-auto table">
-           💜 Les early adopters de la bêta bénéficieront d'une réduction à vie lors du lancement officiel.
+           Les early adopters de la bêta bénéficieront d'une réduction à vie lors du lancement officiel.
         </p>
       </div>
     </section>

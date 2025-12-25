@@ -1,4 +1,3 @@
-'use client'
 import { Header } from "@/components/sections/Header";
 import { Hero } from "@/components/sections/Hero";
 import { Features } from "@/components/sections/Features";
@@ -8,10 +7,10 @@ import { FinalCTA } from "@/components/sections/FinalCTA";
 export default function HomePage() {
   return (
     <div className="min-h-screen font-sans bg-neutral-50 text-neutral-900">
-      <Header onSignupClick={() => console.log('A faire')} />
+      <Header />
 
       <main>
-        <Hero onSignupClick={() => console.log('A faire')} />
+        <Hero />
         <Features />
         <FinalCTA />
       </main>

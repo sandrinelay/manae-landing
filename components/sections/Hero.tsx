@@ -3,12 +3,11 @@ import React from 'react';
 import { Button } from '../ui/Button';
 import { AppMainCaptureMockup } from '../mockups/AppMockups';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { useSmoothScroll } from '@/hooks/useSmoothScroll';
 
-interface HeroProps {
-  onSignupClick: () => void;
-}
+export const Hero: React.FC = () => {
+  const { scrollToFinalCta, scrollToFeatures } = useSmoothScroll();
 
-export const Hero: React.FC<HeroProps> = ({ onSignupClick }) => {
   return (
     <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
       {/* Background Elements */}
@@ -17,7 +16,7 @@ export const Hero: React.FC<HeroProps> = ({ onSignupClick }) => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
-          
+
           {/* Content */}
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-50 border border-primary-100 text-primary-600 text-xs font-bold uppercase tracking-wide mb-6">
@@ -27,20 +26,20 @@ export const Hero: React.FC<HeroProps> = ({ onSignupClick }) => {
               </span>
               Version bêta • Gratuit 6 mois
             </div>
-            
+
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-900 leading-[1.1] mb-6 tracking-tight">
             <span className="text-transparent bg-linear-to-r from-[#b1609b] to-[#00A6B3]  bg-clip-text ">Organise tes pensées,</span> reprends le contrôle
             </h1>
-            
+
             <p className="text-lg sm:text-xl text-neutral-600 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
             Manae est l'app qui comprend ton rythme et ton énergie. Elle trie tes pensées, organise tes actions et les place au bon moment dans ton quotidien — sans pression.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" icon={<ArrowRight size={20} />} onClick={onSignupClick} className='brand-gradient'>
+              <Button size="lg" icon={<ArrowRight size={20} />} onClick={scrollToFinalCta} className='brand-gradient'>
                 Rejoindre la liste d'attente
               </Button>
-              <Button size="lg" variant="ghost" onClick={() => document.getElementById('features')?.scrollIntoView({behavior: 'smooth'})}>
+              <Button size="lg" variant="ghost" onClick={scrollToFeatures}>
                 En savoir plus
               </Button>
             </div>

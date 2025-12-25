@@ -2,7 +2,7 @@ import { WaitlistFormInline } from "@/components/waitlist/WaitlistFormInline";
 
 export function FinalCTA() {
   return (
-    <section className="py-24 px-4 brand-gradient">
+    <section id="final-cta" className="py-24 px-4 brand-gradient scroll-mt-20">
       <div className=" max-w-5xl mx-auto  p-10 md:p-24 text-center text-white  relative overflow-hidden">
 
         <div className="relative z-10">

@@ -2,13 +2,11 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from '../ui/Button';
+import { useSmoothScroll } from '@/hooks/useSmoothScroll';
 
-interface HeaderProps {
-  onSignupClick: () => void;
-}
-
-export const Header: React.FC<HeaderProps> = ({ onSignupClick }) => {
+export const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
+  const { scrollToFinalCta } = useSmoothScroll();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,8 +21,8 @@ export const Header: React.FC<HeaderProps> = ({ onSignupClick }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         {/* Logo - Text only with Quicksand font */}
         <div className="flex items-center">
-           <span 
-             className="text-3xl font-bold tracking-tight text-neutral-800 hover:text-primary-600 transition-colors cursor-pointer font-logo" 
+           <span
+             className="text-3xl font-bold tracking-tight text-neutral-800 hover:text-primary-600 transition-colors cursor-pointer font-logo"
              onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
            >
              manae
@@ -33,8 +31,8 @@ export const Header: React.FC<HeaderProps> = ({ onSignupClick }) => {
 
         {/* CTA */}
         <div className="flex items-center gap-4">
-          <Button className='brand-gradient' variant="primary" onClick={onSignupClick}>
-          Liste d’attente
+          <Button className='brand-gradient' variant="primary" onClick={scrollToFinalCta}>
+          Liste d'attente
           </Button>
         </div>
       </div>

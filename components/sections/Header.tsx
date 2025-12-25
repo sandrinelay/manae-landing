@@ -34,7 +34,7 @@ export const Header: React.FC<HeaderProps> = ({ onSignupClick }) => {
         {/* CTA */}
         <div className="flex items-center gap-4">
           <Button className='brand-gradient' variant="primary" onClick={onSignupClick}>
-            Rejoindre la bêta
+          Liste d’attente
           </Button>
         </div>
       </div>

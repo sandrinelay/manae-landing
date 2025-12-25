@@ -7,11 +7,11 @@ export function FinalCTA() {
 
         <div className="relative z-10">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Prête à vider ta charge mentale ?
+            Envie de simplifier ton quotidien ?
           </h2>
 
           <p className="text-lg md:text-xl opacity-90 mb-12 max-w-2xl mx-auto">
-            Rejoins la bêta maintenant et profite de 6 mois offerts - commence à retrouver du calme dès aujourd'hui.
+          Accède à la bêta gratuitement pendant 6 mois et commence à organiser tes pensées sans effort.
           </p>
 
           {/* TODO: Restaurer le bouton signup après la beta

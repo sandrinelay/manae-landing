@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
                 <span className="text-2xl font-bold text-neutral-900 font-logo">manae</span>
               </div>
               <p className="text-neutral-500 max-w-sm">
-                Reprenez le contrôle de votre temps, simplement.
+                 Organise tes pensées. Agis sereinement.
               </p>
            </div>
            

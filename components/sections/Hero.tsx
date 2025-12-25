@@ -29,16 +29,16 @@ export const Hero: React.FC<HeroProps> = ({ onSignupClick }) => {
             </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-900 leading-[1.1] mb-6 tracking-tight">
-              Vide ta charge mentale en <span className="text-transparent bg-linear-to-r from-[#b1609b] to-[#00A6B3]  bg-clip-text ">2 minutes</span>
+            <span className="text-transparent bg-linear-to-r from-[#b1609b] to-[#00A6B3]  bg-clip-text ">Organise tes pensées,</span> reprends le contrôle
             </h1>
             
             <p className="text-lg sm:text-xl text-neutral-600 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-            Manae est l’application intelligente qui analyse ton agenda et ton état d’esprit pour te proposer ce <strong>qu’il faut faire</strong>, au <strong>bon moment,</strong> sans stress.
+            Manae est l'app qui comprend ton rythme et ton énergie. Elle trie tes pensées, organise tes actions et les place au bon moment dans ton quotidien — sans pression.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" icon={<ArrowRight size={20} />} onClick={onSignupClick} className='brand-gradient'>
-                Rejoindre la bêta gratuite
+                Rejoindre la liste d'attente
               </Button>
               <Button size="lg" variant="ghost" onClick={() => document.getElementById('features')?.scrollIntoView({behavior: 'smooth'})}>
                 En savoir plus

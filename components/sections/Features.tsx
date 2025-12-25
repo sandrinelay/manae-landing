@@ -26,20 +26,20 @@ export const Features: React.FC = () => {
         {/* Main Features Grid - Horizontal on Desktop */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <FeatureItem 
-             title="Capture intelligente"
-             description="Ne te contente pas de noter une tâche. Indique ton état d’esprit. Manae comprend que tu ne peux pas tout gérer quand tu es épuisée et te suggère ce qui est réaliste pour toi."
+             title="Vide ton esprit en un instant"
+             description="Note tout ce qui te passe par la tête — tâches, idées, pensées en vrac. Indique ton humeur du moment. Manae s'occupe du reste."
              icon={Mic}
           />
 
           <FeatureItem 
-             title="Suggestions IA personnalusées"
-             description="Fini la to-do list sans fin. Manae analyse tes disponibilités et te propose les bonnes actions selon ton planning et ton énergie."
+             title="Manae fait le tri à ta place"
+             description="L'IA analyse tes pensées et les classe automatiquement : ce qui est urgent, ce qui peut attendre, ce qui demande réflexion. Fini le bruit mental — ne garde que l'essentiel."
              icon={Brain}
           />
 
           <FeatureItem 
-             title="Agenda Connecté"
-             description="Manae voit tes réunions et les impératifs familiaux, puis glisse les tâches personnelles dans les vrais trous de ton emploi du temps."
+             title="Tes actions, placées au bon moment"
+             description="Manae connaît ton agenda, tes contraintes et ton niveau d'énergie. Elle glisse tes tâches dans les créneaux où tu peux vraiment les faire — sans te surcharger."
              icon={Calendar}
           />
         </div>
@@ -56,8 +56,8 @@ export const Features: React.FC = () => {
                     <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 rounded-full bg-accent-50 text-accent-600 border border-accent-100">
                         <span className="font-bold uppercase tracking-wider text-[10px]">Fonctionnalité Bonus</span>
                     </div>
-                    <h3 className="text-2xl font-bold text-neutral-900 mb-3 tracking-tight">Transforme tes idées en actions</h3>
-                    <p className="text-neutral-600 leading-relaxed">Envie de refaire la déco ou de planifier un voyage à l'autre bout du monde ? Note tes idées en vrac. Manae les analyse, évalue la faisabilité et te propose un premier plan d'action concret.</p>
+                    <h3 className="text-2xl font-bold text-neutral-900 mb-3 tracking-tight">Transforme tes idées floues en plan d'action</h3>
+                    <p className="text-neutral-600 leading-relaxed">Tu as une idée mais tu ne sais pas par où commencer ? Note-la en vrac. Manae la structure, évalue ce qui est réaliste et te propose les premières étapes — concrètes et faisables.</p>
                 </div>
             </div>
         </div>

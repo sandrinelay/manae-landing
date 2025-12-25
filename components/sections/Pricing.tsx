@@ -9,11 +9,11 @@ const PricingCard: React.FC<PricingTierProps & { onAction?: () => void }> = ({ n
   return (
     <div className={`relative p-8 rounded-2xl transition-all duration-300 flex flex-col h-full ${
         isPopular
-        ? 'bg-white border-2 border-primary-500 shadow-xl scale-105 z-10'
+        ? 'bg-white border-2 border-[#4A7488] shadow-xl scale-105 z-10'
         : 'bg-neutral-50 border border-neutral-200 opacity-90'
     }`}>
       {isPopular && (
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-primary-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#4A7488] text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
           Actuellement
         </div>
       )}
@@ -32,7 +32,7 @@ const PricingCard: React.FC<PricingTierProps & { onAction?: () => void }> = ({ n
       <ul className="space-y-4 mb-8 flex-1">
         {features.map((feat, idx) => (
           <li key={idx} className="flex items-start gap-3">
-             <Check size={18} className={`shrink-0 mt-0.5 ${isPopular ? 'text-primary-500' : 'text-neutral-400'}`} />
+             <Check size={18} className={`shrink-0 mt-0.5 ${isPopular ? 'text-[#4A7488]' : 'text-neutral-400'}`} />
              <span className="text-sm text-neutral-700">{feat}</span>
           </li>
         ))}
@@ -43,7 +43,7 @@ const PricingCard: React.FC<PricingTierProps & { onAction?: () => void }> = ({ n
         onClick={onAction}
         className={`w-full py-3 rounded-xl font-bold text-sm transition-colors ${
             isPopular
-            ? 'bg-brand-gradient text-white hover:opacity-90 shadow-lg'
+            ? 'btn-accent shadow-lg'
             : 'bg-white border border-neutral-300 text-neutral-400 cursor-not-allowed'
         }`}
       >
@@ -62,7 +62,7 @@ export const Pricing: React.FC = () => {
         <div className="text-center max-w-2xl mx-auto mb-16">
            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">Tarifs à venir</h2>
            <p className="text-lg text-neutral-600">
-             Profite de toutes les fonctionnalités <span className="text-primary-600 font-bold">gratuitement</span> pendant la période bêta (6 mois).
+             Profite de toutes les fonctionnalités <span className="text-[#4A7488] font-bold">gratuitement</span> pendant la période bêta (6 mois).
            </p>
         </div>
 
@@ -112,7 +112,7 @@ export const Pricing: React.FC = () => {
             />
         </div>
 
-        <p className="text-center text-sm text-primary-600 font-medium mt-12 bg-primary-50 inline-block px-4 py-2 rounded-full mx-auto table">
+        <p className="text-center text-sm text-[#4A7488] font-medium mt-12 bg-[#BEE5D3]/30 inline-block px-4 py-2 rounded-full mx-auto table">
            Les early adopters de la bêta bénéficieront d'une réduction à vie lors du lancement officiel.
         </p>
       </div>

@@ -31,7 +31,7 @@ export const Header: React.FC = () => {
 
         {/* CTA */}
         <div className="flex items-center gap-4">
-          <Button className='brand-gradient' variant="primary" onClick={scrollToFinalCta}>
+          <Button variant="primary" onClick={scrollToFinalCta}>
           Liste d'attente
           </Button>
         </div>

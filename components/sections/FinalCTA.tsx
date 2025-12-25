@@ -34,7 +34,8 @@ export function FinalCTA() {
           <WaitlistFormInline />
 
           <p className="mt-8 text-sm opacity-75">
-            2 minutes pour démarrer • Pas de spam
+          Accès bêta limité — ouverture progressive</p>
+          <p>Bêta fermée • 100 premiers utilisateurs
           </p>
         </div>
       </div>

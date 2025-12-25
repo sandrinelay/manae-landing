@@ -1,11 +1,65 @@
 @import "tailwindcss";
 
+/* =============================================
+   DESIGN SYSTEM - COULEURS MANAE
+   =============================================
+   Primary:   #4A7488 (bleu-gris)
+   Secondary: #BEE5D3 (vert menthe)
+   Accent:    #A03884 (magenta - boutons)
+   ============================================= */
+
 /* Base styles */
 html,
 body {
   height: 100%;
 }
 
-.brand-gradient { 
-  background: linear-gradient(135deg, #B1609B 0%, #00A6B3 100%);
+/* Font logo Quicksand */
+.font-logo {
+  font-family: var(--font-quicksand), sans-serif;
+}
+
+/* Dégradé principal (primary → secondary) */
+.brand-gradient {
+  background: linear-gradient(135deg, #4A7488 0%, #BEE5D3 100%);
+}
+
+/* Dégradé texte (pour titres) */
+.text-gradient {
+  background: linear-gradient(to right, #4A7488, #BEE5D3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Bouton magenta */
+.btn-accent {
+  background-color: #A36E94;
+  color: white;
+}
+.btn-accent:hover {
+  background-color: #852255;
+}
+
+/* Couleurs utilitaires */
+.bg-magenta {
+  background-color: #A36E94;
+}
+.bg-magenta-dark {
+  background-color: #852255;
+}
+.text-magenta {
+  color: #A03884;
+}
+.bg-primary {
+  background-color: #4A7488;
+}
+.text-primary {
+  color: #4A7488;
+}
+.bg-mint {
+  background-color: #BEE5D3;
+}
+.text-mint {
+  color: #BEE5D3;
 }

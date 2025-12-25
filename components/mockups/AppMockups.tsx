@@ -53,16 +53,15 @@ export const AppMainCaptureMockup = () => (
 
     {/* Contenu principal */}
     <div className="flex-1 px-6 pt-8 bg-[#F8FAFB]">
-      <h2 className="text-[24px] font-bold text-neutral-800 mb-1 leading-tight tracking-tight">Qu'avez-vous en tête ?</h2>
+      <h2 className="text-[20px] font-bold text-neutral-800 mb-1 leading-tight tracking-tight">Qu'avez-vous en tête ?</h2>
       <p className="text-[14px] text-neutral-400 mb-6 font-medium">Tâches, notes, courses, idées... Déposez tout ici.</p>
 
       {/* Zone de texte principale */}
-      <div className="bg-white rounded-[2rem] p-6 mb-6 shadow-sm border border-neutral-100 relative h-48 flex flex-col">
+      <div className="bg-white rounded-[2rem] p-6 mb-6 shadow-sm border border-neutral-100 relative h-44 flex flex-col">
         <p className="text-[15px] text-neutral-700 leading-relaxed font-medium">
-          Appeler le pédiatre avant samedi pour Milo, acheter des fruits et du vin, partir au Cambodge en 2028
+        “Acheter du café, améliorer ma routine du matin, penser à envoyer le mail à Lena, réserver un créneau sport
         </p>
         <div className="mt-auto flex justify-end">
-          <span className="text-[11px] font-bold text-[#5F8695]/60 tracking-widest uppercase">IA READY</span>
         </div>
       </div>
 
@@ -71,33 +70,33 @@ export const AppMainCaptureMockup = () => (
          <p className="text-[13px] text-neutral-400 mb-4 font-medium">Comment te sens-tu ? <span className="opacity-60">(facultatif)</span></p>
          <div className="grid grid-cols-4 gap-2">
             {/* Énergique - Actif (Orange) */}
-            <div className="bg-[#FF6B00] rounded-2xl py-4 flex flex-col items-center justify-center text-white shadow-lg shadow-orange-500/20">
+            <div className="bg-[#FAA82D] rounded-2xl py-4 flex flex-col items-center justify-center text-white shadow-lg shadow-orange-500/20">
                <Zap size={22} className="mb-2" fill="white" />
-               <span className="text-[9px] font-bold uppercase tracking-tight text-center px-1 leading-none">Énergique</span>
+               <span className="text-[8px] font-bold uppercase tracking-tight text-center px-1 leading-none">Énergique</span>
             </div>
             
             {/* Calme */}
             <div className="bg-white rounded-2xl py-4 flex flex-col items-center justify-center border border-neutral-100 shadow-sm">
                <Moon size={22} className="mb-2 text-neutral-400" />
-               <span className="text-[9px] font-bold text-neutral-400 uppercase tracking-tight">Calme</span>
+               <span className="text-[8px] font-bold text-neutral-400 uppercase tracking-tight">Calme</span>
             </div>
             
             {/* Débordé(e) */}
             <div className="bg-white rounded-2xl py-4 flex flex-col items-center justify-center border border-neutral-100 shadow-sm">
                <CircleAlert size={22} className="mb-2 text-neutral-400" />
-               <span className="text-[9px] font-bold text-neutral-400 uppercase tracking-tight">Débordé(e)</span>
+               <span className="text-[8px] font-bold text-neutral-400 uppercase tracking-tight">Débordé(e)</span>
             </div>
             
             {/* Fatigué(e) */}
             <div className="bg-white rounded-2xl py-4 flex flex-col items-center justify-center border border-neutral-100 shadow-sm">
                <Frown size={22} className="mb-2 text-neutral-400" />
-               <span className="text-[9px] font-bold text-neutral-400 uppercase tracking-tight text-center leading-none">Fatigué(e)</span>
+               <span className="text-[8px] font-bold text-neutral-400 uppercase tracking-tight text-center leading-none">Fatigué(e)</span>
             </div>
          </div>
       </div>
 
       {/* Action Button - Noir comme sur l'image */}
-      <button className="w-full bg-[#2D3133] py-5 rounded-[2rem] text-white font-bold text-[16px] shadow-xl hover:bg-neutral-900 transition-colors active:scale-95 mb-4">
+      <button className="w-full bg-[#4A7488] py-3 rounded-[2rem] text-white font-bold text-[14px] shadow-xl hover:bg-neutral-900 transition-colors active:scale-95 mb-4">
          Capturer mes pensées
       </button>
 

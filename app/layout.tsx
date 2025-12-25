@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
+import { Quicksand } from "next/font/google";
 import "@/app/globals.css";
-import { Footer } from "@/components/layout/Footer";
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  variable: "--font-quicksand",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Manae — alléger la charge mentale",
@@ -14,11 +20,9 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="fr">
+    <html lang="fr" className={quicksand.variable}>
       <body className="min-h-screen flex flex-col bg-white text-neutral-900">
-
         <main className="flex-1">{children}</main>
-
       </body>
     </html>
   );

@@ -33,7 +33,7 @@ export const Features: React.FC = () => {
 
           <FeatureItem
              title="Manae fait le tri à ta place"
-             description="L'IA analyse tes pensées et les classe automatiquement : ce qui est urgent, ce qui peut attendre, ce qui demande réflexion. Fini le bruit mental — ne garde que l'essentiel."
+             description="Manae analyse tes pensées et les classe automatiquement : ce qui est urgent, ce qui peut attendre, ce qui demande réflexion. Fini le bruit mental — ne garde que l'essentiel."
              icon={Brain}
           />
 

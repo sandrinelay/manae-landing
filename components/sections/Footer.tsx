@@ -39,9 +39,9 @@ export const Footer: React.FC = () => {
 
            <div>
               <h4 className="font-bold text-neutral-900 mb-4">Contact</h4>
-              <a href="mailto:hello@manae.app" className="flex items-center gap-2 text-sm text-neutral-500 hover:text-[#4A7488] transition-colors">
+              <a href="mailto:contact@manae.app" className="flex items-center gap-2 text-sm text-neutral-500 hover:text-[#4A7488] transition-colors">
                  <Mail size={16} />
-                 hello@manae.app
+                 contact@manae.app
               </a>
            </div>
         </div>

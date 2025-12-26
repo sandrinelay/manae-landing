@@ -319,7 +319,7 @@ export const CGU: LegalPage = {
       title: '4. Accès gratuit - Version bêta',
       content: [
         'Manae est actuellement proposée en version bêta, accessible gratuitement pendant une durée de six (6) mois à compter de l’ouverture du service.',
-        'Durant cette période : aucune facturation n’est appliquée, certaines fonctionnalités peuvent évoluer, être modifiées ou interrompues, es incidents techniques ou des limitations temporaires peuvent survenir.',
+        'Durant cette période : aucune facturation n’est appliquée, certaines fonctionnalités peuvent évoluer, être modifiées ou interrompues, les incidents techniques ou des limitations temporaires peuvent survenir.',
         'L’utilisateur reconnaît utiliser une version en cours de développement.',
       ],
     },

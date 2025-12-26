@@ -3,7 +3,7 @@ import { WaitlistFormInline } from "@/components/waitlist/WaitlistFormInline";
 export function FinalCTA() {
   return (
     <section id="final-cta" className="py-24 px-4 brand-gradient scroll-mt-20">
-      <div className=" max-w-5xl mx-auto  p-10 md:p-24 text-center text-white  relative overflow-hidden">
+      <div className="max-w-5xl mx-auto p-10 md:p-24 text-center text-white relative overflow-hidden">
 
         <div className="relative z-10">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
@@ -34,8 +34,7 @@ export function FinalCTA() {
           <WaitlistFormInline />
 
           <p className="mt-8 text-sm opacity-75">
-          Accès bêta limité — ouverture progressive</p>
-          <p>Bêta fermée • 100 premiers utilisateurs
+            Accès bêta limité aux 100 premiers utilisateurs — ouverture progressive
           </p>
         </div>
       </div>

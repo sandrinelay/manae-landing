@@ -60,15 +60,15 @@ export function WaitlistFormInline({
   return (
     <form onSubmit={handleSubmit} className={`w-full max-w-md mx-auto ${className}`}>
       <div className="flex flex-col gap-3">
-        {/* Prénom et Nom sur la même ligne */}
-        <div className="flex gap-3">
+        {/* Prénom et Nom - empilés sur mobile, côte à côte sur tablette+ */}
+        <div className="flex flex-col sm:flex-row gap-3">
           <input
             type="text"
             placeholder="Prénom"
             value={formData.firstName}
             onChange={(e) => updateField('firstName', e.target.value)}
             disabled={isLoading}
-            className="flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-transparent transition-all disabled:opacity-50"
+            className="w-full sm:flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-transparent transition-all disabled:opacity-50"
             required
           />
           <input
@@ -77,7 +77,7 @@ export function WaitlistFormInline({
             value={formData.lastName}
             onChange={(e) => updateField('lastName', e.target.value)}
             disabled={isLoading}
-            className="flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-transparent transition-all disabled:opacity-50"
+            className="w-full sm:flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-transparent transition-all disabled:opacity-50"
             required
           />
         </div>

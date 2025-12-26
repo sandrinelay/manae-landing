@@ -104,7 +104,7 @@ export function WaitlistFormInline({
         <button
           type="submit"
           disabled={isLoading}
-          className="w-full py-4 px-6 rounded-xl bg-white text-[#A03884] font-bold text-lg hover:bg-neutral-50 transition-colors shadow-lg disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+          className="w-full py-4 px-6 rounded-xl bg-white text-[#4A7488] font-bold text-lg hover:bg-neutral-50 transition-colors shadow-lg disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
         >
           {isLoading ? (
             <>

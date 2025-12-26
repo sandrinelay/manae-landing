@@ -112,7 +112,7 @@ export function WaitlistFormInline({
               Inscription en cours...
             </>
           ) : (
-            "Rejoindre la bêta gratuite"
+            "M'inscrire pour la bêta gratuite"
           )}
         </button>
       </div>

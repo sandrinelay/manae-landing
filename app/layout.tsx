@@ -9,9 +9,9 @@ const quicksand = Quicksand({
 });
 
 export const metadata: Metadata = {
-  title: "Manae — alléger la charge mentale",
+  title: "Manae — organise tes pensées",
   description:
-    "Manae est une application pensée pour aider les parents à organiser, prioriser et alléger leur charge mentale.",
+    "Manae, organise ton quotidien en fonction de ton énergie.",
 };
 
 interface RootLayoutProps {

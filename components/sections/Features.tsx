@@ -26,20 +26,20 @@ export const Features: React.FC = () => {
         {/* Main Features Grid - Horizontal on Desktop */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <FeatureItem
-             title="Vide ton esprit en un instant"
-             description="Note tout ce qui te passe par la tête — tâches, idées, pensées en vrac. Indique ton humeur du moment. Manae s'occupe du reste."
+             title="Dépose ce qui t'encombre"
+             description="Note tout ce qui te passe par la tête — en vrac, sans réfléchir. Manae accueille tout."
              icon={Mic}
           />
 
           <FeatureItem
-             title="Manae fait le tri à ta place"
-             description="Manae analyse tes pensées et les classe automatiquement : ce qui est urgent, ce qui peut attendre, ce qui demande réflexion. Fini le bruit mental — ne garde que l'essentiel."
+             title="Manae trie pour toi"
+             description="Chaque pensée trouve sa place : tâche, idée, course, ou simple note. Plus de bruit mental."
              icon={Brain}
           />
 
           <FeatureItem
-             title="Tes actions, placées au bon moment"
-             description="Manae connaît ton agenda, tes contraintes et ton niveau d'énergie. Elle glisse tes tâches dans les créneaux où tu peux vraiment les faire — sans te surcharger."
+             title="Agis au bon moment"
+             description="Manae te suggère quand faire quoi, selon ton agenda et ton énergie. Sans pression."
              icon={Calendar}
           />
         </div>
@@ -56,8 +56,8 @@ export const Features: React.FC = () => {
                     <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 rounded-full bg-[#A03884]/10 text-[#A03884] border border-[#A03884]/20">
                         <span className="font-bold uppercase tracking-wider text-[10px]">Fonctionnalité Bonus</span>
                     </div>
-                    <h3 className="text-2xl font-bold text-[#A03884] mb-3 tracking-tight">Transforme tes idées floues en plan d'action</h3>
-                    <p className="text-neutral-600 leading-relaxed">Tu as une idée mais tu ne sais pas par où commencer ? Note-la en vrac. Manae la structure, évalue ce qui est réaliste et te propose les premières étapes — concrètes et faisables.</p>
+                    <h3 className="text-2xl font-bold text-[#A03884] mb-3 tracking-tight">Une idée floue ? Manae t'aide à y voir clair.</h3>
+                    <p className="text-neutral-600 leading-relaxed">Tu as une idée mais tu ne sais pas par où commencer ? Dépose-la. Manae la découpe en étapes simples et concrètes — à ton rythme.</p>
                 </div>
             </div>
         </div>

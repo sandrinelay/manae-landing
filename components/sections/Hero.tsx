@@ -32,7 +32,7 @@ export const Hero: React.FC = () => {
             </h1>
 
             <p className="text-lg sm:text-xl text-neutral-600 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-            Manae est l'app qui comprend ton rythme et ton énergie. Elle trie tes pensées, organise tes actions et les place au bon moment dans ton quotidien — sans pression.
+            Ta tête déborde de choses à faire, à ne pas oublier, à penser. Dépose tout ici. Manae trie, clarifie, et te propose des actions — au bon moment, selon ton rythme.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

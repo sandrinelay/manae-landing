@@ -54,7 +54,7 @@ export const AppMainCaptureMockup = () => (
     {/* Contenu principal */}
     <div className="flex-1 px-6 pt-8 bg-[#F8FAFB]">
       <h2 className="text-[20px] font-bold text-neutral-800 mb-1 leading-tight tracking-tight">Qu'as-tu en tête ?</h2>
-      <p className="text-[14px] text-neutral-400 mb-6 font-medium">Tâches, notes, courses, idées... Déposez tout ici.</p>
+      <p className="text-[14px] text-neutral-400 mb-6 font-medium">Tâches, notes, courses, idées... Dépose tout ici.</p>
 
       {/* Zone de texte principale */}
       <div className="bg-white rounded-[2rem] p-6 mb-6 shadow-sm border border-neutral-100 relative h-44 flex flex-col">

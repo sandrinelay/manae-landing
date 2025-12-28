@@ -53,7 +53,7 @@ export const AppMainCaptureMockup = () => (
 
     {/* Contenu principal */}
     <div className="flex-1 px-6 pt-8 bg-[#F8FAFB]">
-      <h2 className="text-[20px] font-bold text-neutral-800 mb-1 leading-tight tracking-tight">Qu'avez-vous en tête ?</h2>
+      <h2 className="text-[20px] font-bold text-neutral-800 mb-1 leading-tight tracking-tight">Qu'as-tu en tête ?</h2>
       <p className="text-[14px] text-neutral-400 mb-6 font-medium">Tâches, notes, courses, idées... Déposez tout ici.</p>
 
       {/* Zone de texte principale */}
@@ -67,7 +67,7 @@ export const AppMainCaptureMockup = () => (
 
       {/* Mood Selector */}
       <div className="mb-8">
-         <p className="text-[13px] text-neutral-400 mb-4 font-medium">Comment te sens-tu ? <span className="opacity-60">(facultatif)</span></p>
+         <p className="text-[13px] text-neutral-400 mb-4 font-medium">Comment te sens-tu ? <span className="opacity-60">(optionnel)</span></p>
          <div className="grid grid-cols-4 gap-2">
             {/* Énergique - Actif (Orange) */}
             <div className="bg-[#FAA82D] rounded-2xl py-4 flex flex-col items-center justify-center text-white shadow-lg shadow-orange-500/20">

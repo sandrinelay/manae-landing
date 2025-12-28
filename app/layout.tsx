@@ -9,9 +9,9 @@ const quicksand = Quicksand({
 });
 
 export const metadata: Metadata = {
-  title: "Manae — organise tes pensées",
+  title: "Manae —  Vide ta tête. Respire",
   description:
-    "Manae, organise ton quotidien en fonction de ton énergie.",
+    "Manae transforme ton vrac mental en clarté.",
 };
 
 interface RootLayoutProps {

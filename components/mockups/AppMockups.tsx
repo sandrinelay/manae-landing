@@ -101,7 +101,7 @@ export const AppMainCaptureMockup = () => (
       </button>
 
       {/* Footer text */}
-      <p className="text-center text-[12px] text-neutral-300 font-medium">Manae organise tout pour toi</p>
+      <p className="text-center text-[12px] text-neutral-300 font-medium">Dépose ce qui t'encombre. Manae trie, tu respires.</p>
     </div>
   </PhoneFrame>
 );

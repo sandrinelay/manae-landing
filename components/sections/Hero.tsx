@@ -28,7 +28,7 @@ export const Hero: React.FC = () => {
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-900 leading-[1.1] mb-6 tracking-tight">
-              <span className="text-gradient">Organise tes pensées,</span> reprends le contrôle
+              <span className="text-gradient">Vide ta tête, respire.</span> Manae transforme ton vrac mental en clarté.
             </h1>
 
             <p className="text-lg sm:text-xl text-neutral-600 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">

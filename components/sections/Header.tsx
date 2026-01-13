@@ -1,12 +1,9 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import { Button } from '../ui/Button';
-import { useSmoothScroll } from '@/hooks/useSmoothScroll';
 
 export const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
-  const { scrollToFinalCta } = useSmoothScroll();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,11 +26,14 @@ export const Header: React.FC = () => {
            </span>
         </div>
 
-        {/* CTA */}
+        {/* CTA - Connexion vers l'app Manae */}
         <div className="flex items-center gap-4">
-          <Button variant="primary" onClick={scrollToFinalCta}>
-          Liste d'attente
-          </Button>
+          <a
+            href="http://localhost:3000/login"
+            className="inline-flex items-center justify-center rounded-full font-medium transition-all duration-200 px-6 py-3 text-base bg-[#4A7488] text-white hover:bg-[#3d6073] shadow-lg"
+          >
+            Connexion
+          </a>
         </div>
       </div>
     </header>

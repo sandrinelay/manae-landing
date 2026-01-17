@@ -29,7 +29,7 @@ export const Header: React.FC = () => {
         {/* CTA - Connexion vers l'app Manae */}
         <div className="flex items-center gap-4">
           <a
-            href="http://localhost:3000/login"
+            href="https://my.manae.app/login"
             className="inline-flex items-center justify-center rounded-full font-medium transition-all duration-200 px-6 py-3 text-base bg-[#4A7488] text-white hover:bg-[#3d6073] shadow-lg"
           >
             Connexion

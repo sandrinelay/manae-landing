@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Moon, Zap, CircleAlert, Frown, User, CheckCircle2, CloudLightning, Mic, Inbox } from 'lucide-react';
+import { Moon, Zap, CircleAlert, Frown, User, CheckCircle2, CloudLightning, Mic, Loader, Brain } from 'lucide-react';
 
 /**
  * Ces composants simulent l'interface de l'application en utilisant CSS/Tailwind
@@ -52,56 +52,70 @@ export const AppMainCaptureMockup = () => (
     </div>
 
     {/* Contenu principal */}
-    <div className="flex-1 px-6 pt-8 bg-[#F8FAFB]">
+    <div className="flex-1 px-6 pt-6 bg-[#F8FAFB] overflow-hidden">
       <h2 className="text-[20px] font-bold text-neutral-800 mb-1 leading-tight tracking-tight">Qu'as-tu en tête ?</h2>
-      <p className="text-[14px] text-neutral-400 mb-6 font-medium">Tâches, notes, courses, idées... Dépose tout ici.</p>
+      <p className="text-[14px] text-neutral-400 mb-4 font-medium">Tâches, notes, courses, idées... Dépose tout ici.</p>
 
       {/* Zone de texte principale */}
-      <div className="bg-white rounded-[2rem] p-6 mb-6 shadow-sm border border-neutral-100 relative h-44 flex flex-col">
-        <p className="text-[15px] text-neutral-700 leading-relaxed font-medium">
-        “Acheter du café, améliorer ma routine du matin, penser à envoyer le mail à Lena, réserver un créneau sport
+      <div className="bg-white rounded-[2rem] p-5 mb-4 shadow-sm border border-neutral-100 relative h-32 flex flex-col">
+        <p className="text-[14px] text-neutral-700 leading-relaxed font-medium">
+        "Acheter du café, améliorer ma routine du matin, penser à envoyer le mail à Lena...
         </p>
-        <div className="mt-auto flex justify-end">
-        </div>
       </div>
 
       {/* Mood Selector */}
-      <div className="mb-8">
-         <p className="text-[13px] text-neutral-400 mb-4 font-medium">Comment te sens-tu ? <span className="opacity-60">(optionnel)</span></p>
+      <div className="mb-4">
+         <p className="text-[12px] text-neutral-400 mb-3 font-medium">Comment te sens-tu ? <span className="opacity-60">(optionnel)</span></p>
          <div className="grid grid-cols-4 gap-2">
             {/* Énergique - Actif (Orange) */}
-            <div className="bg-[#FAA82D] rounded-2xl py-4 flex flex-col items-center justify-center text-white shadow-lg shadow-orange-500/20">
-               <Zap size={22} className="mb-2" fill="white" />
-               <span className="text-[8px] font-bold uppercase tracking-tight text-center px-1 leading-none">Énergique</span>
+            <div className="bg-[#FAA82D] rounded-2xl py-3 flex flex-col items-center justify-center text-white shadow-lg shadow-orange-500/20">
+               <Zap size={20} className="mb-1" fill="white" />
+               <span className="text-[7px] font-bold uppercase tracking-tight text-center px-1 leading-none">Énergique</span>
             </div>
-            
+
             {/* Calme */}
-            <div className="bg-white rounded-2xl py-4 flex flex-col items-center justify-center border border-neutral-100 shadow-sm">
-               <Moon size={22} className="mb-2 text-neutral-400" />
-               <span className="text-[8px] font-bold text-neutral-400 uppercase tracking-tight">Calme</span>
+            <div className="bg-white rounded-2xl py-3 flex flex-col items-center justify-center border border-neutral-100 shadow-sm">
+               <Moon size={20} className="mb-1 text-neutral-400" />
+               <span className="text-[7px] font-bold text-neutral-400 uppercase tracking-tight">Calme</span>
             </div>
-            
+
             {/* Débordé(e) */}
-            <div className="bg-white rounded-2xl py-4 flex flex-col items-center justify-center border border-neutral-100 shadow-sm">
-               <CircleAlert size={22} className="mb-2 text-neutral-400" />
-               <span className="text-[8px] font-bold text-neutral-400 uppercase tracking-tight">Débordé(e)</span>
+            <div className="bg-white rounded-2xl py-3 flex flex-col items-center justify-center border border-neutral-100 shadow-sm">
+               <CircleAlert size={20} className="mb-1 text-neutral-400" />
+               <span className="text-[7px] font-bold text-neutral-400 uppercase tracking-tight">Débordé(e)</span>
             </div>
-            
+
             {/* Fatigué(e) */}
-            <div className="bg-white rounded-2xl py-4 flex flex-col items-center justify-center border border-neutral-100 shadow-sm">
-               <Frown size={22} className="mb-2 text-neutral-400" />
-               <span className="text-[8px] font-bold text-neutral-400 uppercase tracking-tight text-center leading-none">Fatigué(e)</span>
+            <div className="bg-white rounded-2xl py-3 flex flex-col items-center justify-center border border-neutral-100 shadow-sm">
+               <Frown size={20} className="mb-1 text-neutral-400" />
+               <span className="text-[7px] font-bold text-neutral-400 uppercase tracking-tight text-center leading-none">Fatigué(e)</span>
             </div>
          </div>
       </div>
 
-      {/* Action Button - Noir comme sur l'image */}
-      <button className="w-full bg-[#4A7488] py-3 rounded-[2rem] text-white font-bold text-[14px] shadow-xl hover:bg-neutral-900 transition-colors active:scale-95 mb-4">
-         Capturer mes pensées
+      {/* Action Button */}
+      <button className="w-full bg-[#4A7488] py-3 rounded-[2rem] text-white font-bold text-[14px] shadow-xl hover:bg-neutral-900 transition-colors active:scale-95">
+         Je dépose
       </button>
+    </div>
 
-      {/* Footer text */}
-      <p className="text-center text-[12px] text-neutral-300 font-medium">Dépose ce qui t'encombre. Manae trie, tu respires.</p>
+    {/* Bottom Navigation Bar */}
+    <div className="bg-white border-t border-neutral-100 px-8 py-3 flex justify-around items-center shrink-0 mt-auto">
+      {/* Capture - Active */}
+      <div className="flex flex-col items-center">
+        <Loader size={22} className="text-[#4A7488]" />
+        <span className="text-[9px] font-semibold text-[#4A7488] mt-1">Capture</span>
+      </div>
+      {/* Clarté */}
+      <div className="flex flex-col items-center">
+        <Brain size={22} className="text-neutral-400" />
+        <span className="text-[9px] font-medium text-neutral-400 mt-1">Clarté</span>
+      </div>
+      {/* Profil */}
+      <div className="flex flex-col items-center">
+        <User size={22} className="text-neutral-400" />
+        <span className="text-[9px] font-medium text-neutral-400 mt-1">Profil</span>
+      </div>
     </div>
   </PhoneFrame>
 );

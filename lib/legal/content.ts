@@ -102,9 +102,9 @@ export const CONFIDENTIALITE: LegalPage = {
       id: 'responsable',
       title: '2. Responsable du traitement',
       content: [
-        'Le responsable du traitement des données est : Sandrine Lay (éditrice du service Manae, en phase de développement du projet)',
-        'Contact : contact@manae.app',
-        'Les informations légales seront complétées lors de la création de la structure juridique dédiée.',
+        'Responsable du traitement : Sandrine Lay',
+        'Adresse postale : 40 rue des Princes de Wagram, 94520 Mandres-les-Roses',
+        'Email : contact@manae.app',
       ],
     },
     {
@@ -185,6 +185,7 @@ export const CONFIDENTIALITE: LegalPage = {
             'Localisation : États-Unis',
             'Garanties : Clauses Contractuelles Types (CCT)',
             'Conservation : conformément à la politique d\'OpenAI (données non utilisées à des fins d\'entraînement)',
+            'Politique de confidentialité : https://openai.com/fr-FR/policies/row-privacy-policy/',
           ],
         },
         {
@@ -318,9 +319,10 @@ export const CGU: LegalPage = {
       id: 'bêta',
       title: '4. Accès gratuit - Version bêta',
       content: [
-        'Manae est actuellement proposée en version bêta, accessible gratuitement pendant une durée de six (6) mois à compter de l’ouverture du service.',
-        'Durant cette période : aucune facturation n’est appliquée, certaines fonctionnalités peuvent évoluer, être modifiées ou interrompues, les incidents techniques ou des limitations temporaires peuvent survenir.',
-        'L’utilisateur reconnaît utiliser une version en cours de développement.',
+        'Manae est actuellement proposée en version bêta, accessible gratuitement pendant une durée de six (6) mois à compter de l\'ouverture du service.',
+        'Durant cette période : aucune facturation n\'est appliquée, certaines fonctionnalités peuvent évoluer, être modifiées ou interrompues, les incidents techniques ou des limitations temporaires peuvent survenir.',
+        'L\'utilisateur reconnaît utiliser une version en cours de développement.',
+        'Des abonnements payants seront proposés après la période bêta, avec des tarifs indicatifs entre 3,99€ et 15,99€/mois selon les fonctionnalités. Les tarifs définitifs seront communiqués au moins 30 jours avant la fin de la bêta.',
       ],
     },
     {
@@ -372,7 +374,7 @@ export const CGU: LegalPage = {
       title: '10. Suspension et suppression de compte',
       content: [
         'Manae se réserve le droit de suspendre ou supprimer un compte en cas de violation manifeste des présentes CGU.',
-        'L\'utilisateur peut supprimer son compte à tout moment.',
+        'Vous pouvez demander la suppression complète de votre compte et de toutes vos données en envoyant un email à contact@manae.app avec l\'objet "Suppression de compte"',
         'En cas de suppression : les données sont supprimées ou anonymisées dans un délai maximal de 30 jours, sauf obligation légale contraire.',
       ],
     },

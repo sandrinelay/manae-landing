@@ -21,7 +21,25 @@ export default function GuideSimplePage() {
               </p>
             </header>
 
-            <section className="mb-12">
+            {/* Table des matières */}
+            <nav className="mb-10 p-6 bg-slate-50 rounded-lg border border-slate-200">
+              <h2 className="text-lg font-semibold text-[#4A7488] mb-4">Sommaire</h2>
+              <ul className="space-y-2 text-slate-700">
+                <li><a href="#cest-quoi" className="hover:text-[#4A7488] hover:underline">C'est quoi Manae ?</a></li>
+                <li><a href="#demarrer" className="hover:text-[#4A7488] hover:underline">Démarrer en 3 minutes</a></li>
+                <li><a href="#exemples" className="hover:text-[#4A7488] hover:underline">Exemples de choses à capturer</a></li>
+                <li><a href="#humeur" className="hover:text-[#4A7488] hover:underline">L'astuce de l'humeur</a></li>
+                <li><a href="#installer" className="hover:text-[#4A7488] hover:underline">Ajouter Manae sur votre écran d'accueil</a></li>
+                <li><a href="#questions" className="hover:text-[#4A7488] hover:underline">Questions rapides</a></li>
+                <li><a href="#aide" className="hover:text-[#4A7488] hover:underline">Besoin d'aide ?</a></li>
+                <li><a href="#conseils" className="hover:text-[#4A7488] hover:underline">3 conseils pour bien utiliser Manae</a></li>
+                <li><a href="#pret" className="hover:text-[#4A7488] hover:underline">Vous êtes prêt !</a></li>
+              </ul>
+            </nav>
+
+            <hr className="my-8 border-slate-200" />
+
+            <section id="cest-quoi" className="mb-12 scroll-mt-20">
               <h2 className="text-2xl font-bold text-[#4A7488] mb-4">C'est quoi Manae ?</h2>
               <p className="text-slate-700 mb-4">
                 Une app pour <strong>noter vos pensées en 5 secondes</strong> et <strong>ne plus rien oublier</strong>.
@@ -32,7 +50,9 @@ export default function GuideSimplePage() {
               <p className="text-slate-700 font-semibold">Simple comme ça.</p>
             </section>
 
-            <section className="mb-12">
+            <hr className="my-8 border-slate-200" />
+
+            <section id="demarrer" className="mb-12 scroll-mt-20">
               <h2 className="text-2xl font-bold text-[#4A7488] mb-6">Démarrer en 3 minutes</h2>
 
               <div className="mb-8">
@@ -78,7 +98,9 @@ export default function GuideSimplePage() {
               </div>
             </section>
 
-            <section className="mb-12">
+            <hr className="my-8 border-slate-200" />
+
+            <section id="exemples" className="mb-12 scroll-mt-20">
               <h2 className="text-2xl font-bold text-[#4A7488] mb-6">Exemples de choses à capturer</h2>
 
               <div className="mb-6">
@@ -124,7 +146,9 @@ export default function GuideSimplePage() {
               </div>
             </section>
 
-            <section className="mb-12">
+            <hr className="my-8 border-slate-200" />
+
+            <section id="humeur" className="mb-12 scroll-mt-20">
               <h2 className="text-2xl font-bold text-[#4A7488] mb-4">L'astuce de l'humeur</h2>
               <p className="text-slate-700 mb-4">
                 Avant de capturer, vous pouvez dire comment vous vous sentez :
@@ -140,7 +164,9 @@ export default function GuideSimplePage() {
               </p>
             </section>
 
-            <section className="mb-12">
+            <hr className="my-8 border-slate-200" />
+
+            <section id="installer" className="mb-12 scroll-mt-20">
               <h2 className="text-2xl font-bold text-[#4A7488] mb-6">Ajouter Manae sur votre écran d'accueil</h2>
 
               <div className="mb-6">
@@ -168,7 +194,9 @@ export default function GuideSimplePage() {
               </p>
             </section>
 
-            <section className="mb-12">
+            <hr className="my-8 border-slate-200" />
+
+            <section id="questions" className="mb-12 scroll-mt-20">
               <h2 className="text-2xl font-bold text-[#4A7488] mb-6">Questions rapides</h2>
 
               <div className="space-y-4">
@@ -209,7 +237,9 @@ export default function GuideSimplePage() {
               </div>
             </section>
 
-            <section className="mb-12">
+            <hr className="my-8 border-slate-200" />
+
+            <section id="aide" className="mb-12 scroll-mt-20">
               <h2 className="text-2xl font-bold text-[#4A7488] mb-4">Besoin d'aide ?</h2>
               <p className="text-slate-700 mb-2">
                 <strong>Email</strong> :{' '}
@@ -225,7 +255,9 @@ export default function GuideSimplePage() {
               </p>
             </section>
 
-            <section className="mb-12">
+            <hr className="my-8 border-slate-200" />
+
+            <section id="conseils" className="mb-12 scroll-mt-20">
               <h2 className="text-2xl font-bold text-[#4A7488] mb-6">3 conseils pour bien utiliser Manae</h2>
 
               <div className="space-y-6">
@@ -261,7 +293,9 @@ export default function GuideSimplePage() {
               </div>
             </section>
 
-            <section className="mb-8">
+            <hr className="my-8 border-slate-200" />
+
+            <section id="pret" className="mb-8 scroll-mt-20">
               <h2 className="text-2xl font-bold text-[#4A7488] mb-4">Vous êtes prêt !</h2>
               <p className="text-slate-700 mb-4">
                 Manae, c'est juste ça :

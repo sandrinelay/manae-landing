@@ -141,6 +141,34 @@ export default function GuideSimplePage() {
             </section>
 
             <section className="mb-12">
+              <h2 className="text-2xl font-bold text-[#4A7488] mb-6">Ajouter Manae sur votre écran d'accueil</h2>
+
+              <div className="mb-6">
+                <h3 className="text-xl font-semibold text-[#4A7488] mb-3">Sur iPhone (Safari)</h3>
+                <ol className="list-decimal pl-6 space-y-2 text-slate-700">
+                  <li>Ouvrez my.manae.app dans Safari</li>
+                  <li>Appuyez sur l'icône de partage (carré avec flèche vers le haut)</li>
+                  <li>Faites défiler et appuyez sur "Sur l'écran d'accueil"</li>
+                  <li>Appuyez sur "Ajouter"</li>
+                </ol>
+              </div>
+
+              <div className="mb-6">
+                <h3 className="text-xl font-semibold text-[#4A7488] mb-3">Sur Android (Chrome)</h3>
+                <ol className="list-decimal pl-6 space-y-2 text-slate-700">
+                  <li>Ouvrez my.manae.app dans Chrome</li>
+                  <li>Appuyez sur les 3 petits points en haut à droite</li>
+                  <li>Appuyez sur "Ajouter à l'écran d'accueil"</li>
+                  <li>Appuyez sur "Ajouter"</li>
+                </ol>
+              </div>
+
+              <p className="text-slate-700 font-semibold">
+                Manae apparaît maintenant comme une vraie app sur votre téléphone !
+              </p>
+            </section>
+
+            <section className="mb-12">
               <h2 className="text-2xl font-bold text-[#4A7488] mb-6">Questions rapides</h2>
 
               <div className="space-y-4">

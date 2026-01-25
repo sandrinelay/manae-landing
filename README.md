@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Le bouton "Connexion" sur le site vitrine manae.app pointe vers /set-password au lieu de /login.# Manae Landing Page
 
-## Getting Started
+Landing page pour Manae - Application de capture et organisation de pensées avec IA.
 
-First, run the development server:
+## 🚀 Technologies
+
+- **Next.js 16** (App Router)
+- **React 19**
+- **TypeScript**
+- **Tailwind CSS v4**
+- **Supabase** (gestion de la liste d'attente)
+- **Lucide React** (icônes)
+
+## 📦 Installation
+
+```bash
+npm install
+```
+
+## 🔧 Configuration
+
+Créez un fichier `.env.local` à la racine du projet :
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+## 🏃 Développement
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗️ Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+## 📁 Structure du projet
 
-To learn more about Next.js, take a look at the following resources:
+```
+manae-landing/
+├── app/                      # Pages Next.js (App Router)
+│   ├── guide-simple/        # Guide simple d'utilisation
+│   ├── legal/               # Pages légales (CGU, confidentialité, etc.)
+│   └── page.tsx             # Page d'accueil
+├── components/
+│   ├── legal/               # Composants des pages légales
+│   ├── mockups/             # Mockups de l'application
+│   ├── sections/            # Sections de la landing page
+│   └── waitlist/            # Formulaire d'inscription
+├── lib/
+│   └── legal/               # Contenu des pages légales
+└── public/                  # Assets statiques
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Design System
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Couleurs
 
-## Deploy on Vercel
+- **Primary** : `#4A7488` (Bleu)
+- **Secondary** : `#BEE5D3` (Vert menthe)
+- **Accent** : `#A03884` (Violet)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Typographie
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Police principale** : Geist Sans
+- **Police monospace** : Geist Mono
+
+## 📄 Pages
+
+- `/` - Page d'accueil avec présentation et formulaire d'inscription
+- `/guide-simple` - Guide simple d'utilisation de Manae
+- `/legal/cgu` - Conditions Générales d'Utilisation
+- `/legal/confidentialite` - Politique de confidentialité
+- `/legal/mentions-legales` - Mentions légales
+- `/legal/cookies` - Politique de cookies
+
+## 🌐 Déploiement
+
+Le projet est déployé sur Vercel à l'adresse : [https://manae.app](https://manae.app)
+
+Pour déployer :
+
+```bash
+# Via Vercel CLI
+vercel --prod
+
+# Ou via push sur main (déploiement automatique)
+git push origin main
+```
+
+## 🔗 Liens externes
+
+- **Application** : [https://my.manae.app](https://my.manae.app)
+- **Email contact** : contact@manae.app
+
+## 📝 Notes
+
+- La version bêta est gratuite pendant 6 mois
+- Les abonnements seront proposés entre 3,99€ et 15,99€/mois après la bêta

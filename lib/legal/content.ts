@@ -31,7 +31,7 @@ export const MENTIONS_LEGALES: LegalPage = {
         'Éditrice du service Manae – projet en cours de développement',
         'Adresse e-mail : contact@manae.app',
         'L\'activité est actuellement exercée à titre personnel.',
-        'Les informations légales (adresse postale, numéro SIRET) seront complétées lors de la création de la structure juridique dédiée.',
+        'Les informations légales (adresse postale, numéro SIRET) sont en cours de validation.',
       ],
     },
     {

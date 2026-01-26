@@ -43,7 +43,7 @@ export function WaitlistFormInline({
           Merci pour ton inscription !
         </p>
         <p className="text-white/80 mb-6">
-          Tu recevras un email dès que la bêta sera disponible.
+          Tu recevras un email très prochainement.
         </p>
         <button
           type="button"

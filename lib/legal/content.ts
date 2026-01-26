@@ -29,9 +29,9 @@ export const MENTIONS_LEGALES: LegalPage = {
       content: [
         'Le site et l\'application Manae sont édités par : Sandrine Lay',
         'Éditrice du service Manae – projet en cours de développement',
+        'Adresse postale : 40 rue des Princes de Wagram, 94520 Mandres-les-Roses',
         'Adresse e-mail : contact@manae.app',
         'L\'activité est actuellement exercée à titre personnel.',
-        'Les informations légales (adresse postale, numéro SIRET) sont en cours de validation.',
       ],
     },
     {
@@ -212,10 +212,11 @@ export const CONFIDENTIALITE: LegalPage = {
       id: 'conservation',
       title: '7. Durée de conservation des données',
       content: [
-        'Données de compte : conservées tant que le compte est actif, puis supprimées dans un délai maximal de 30 jours après suppression',
+        'Données de compte : conservées tant que le compte est actif, puis supprimées immédiatement après suppression du compte',
         'Données d\'utilisation : conservées tant que l\'utilisateur utilise le service',
         'Données techniques : conservées 13 mois maximum',
-        'Données liées à un compte supprimé : supprimées ou anonymisées dans un délai de 30 jours',
+        'Items archivés : supprimés automatiquement après 1 an d\'archivage',
+        'Comptes inactifs : supprimés automatiquement après 2 ans d\'inactivité (une notification sera envoyée avant suppression)',
       ],
     },
     {
@@ -225,8 +226,8 @@ export const CONFIDENTIALITE: LegalPage = {
         'Conformément au RGPD, vous disposez des droits suivants :',
         'Droit d\'accès à vos données',
         'Droit de rectification',
-        'Droit à l\'effacement',
-        'Droit à la portabilité',
+        'Droit à l\'effacement : vous pouvez supprimer votre compte directement depuis votre profil via le bouton "Supprimer mon compte"',
+        'Droit à la portabilité : vous pouvez exporter toutes vos données depuis votre profil via le bouton "Exporter mes données"',
         'Droit d\'opposition',
         'Droit à la limitation du traitement',
       ],
@@ -235,7 +236,10 @@ export const CONFIDENTIALITE: LegalPage = {
       id: 'exercer-droits',
       title: '9. Exercice de vos droits',
       content: [
-        'Vous pouvez exercer vos droits à tout moment en écrivant à : contact@manae.app',
+        'La plupart de vos droits peuvent être exercés directement depuis votre profil dans l\'application :',
+        '- Suppression de compte : bouton "Supprimer mon compte"',
+        '- Export de données : bouton "Exporter mes données"',
+        'Pour toute autre demande, vous pouvez écrire à : contact@manae.app',
         'Délai de réponse : 1 mois maximum.',
         'Vous avez également la possibilité d\'introduire une réclamation auprès de la CNIL (www.cnil.fr).',
       ],
@@ -371,16 +375,24 @@ export const CGU: LegalPage = {
     },
     {
       id: 'suspension',
-      title: '10. Suspension et suppression de compte',
+      title: '10. Résiliation et suppression de compte',
       content: [
         'Manae se réserve le droit de suspendre ou supprimer un compte en cas de violation manifeste des présentes CGU.',
-        'Vous pouvez demander la suppression complète de votre compte et de toutes vos données en envoyant un email à contact@manae.app avec l\'objet "Suppression de compte"',
-        'En cas de suppression : les données sont supprimées ou anonymisées dans un délai maximal de 30 jours, sauf obligation légale contraire.',
+        'Les utilisateurs peuvent supprimer leur compte directement depuis leur profil ou en contactant contact@manae.app. Les données sont supprimées immédiatement.',
+        'Les comptes inactifs depuis plus de 2 ans seront automatiquement supprimés après notification préalable.',
+      ],
+    },
+    {
+      id: 'portabilite',
+      title: '11. Portabilité des données',
+      content: [
+        'Conformément au RGPD, vous pouvez exporter vos données au format JSON depuis votre profil.',
+        'L\'export inclut l\'ensemble de vos contenus (tâches, notes, idées, courses) ainsi que vos paramètres.',
       ],
     },
     {
       id: 'modifications-cgu',
-      title: '11. Modification des CGU',
+      title: '12. Modification des CGU',
       content: [
         'Les présentes CGU peuvent être modifiées à tout moment.',
         'En cas de modification substantielle, l\'utilisateur sera informé par tout moyen approprié.',
@@ -389,7 +401,7 @@ export const CGU: LegalPage = {
     },
     {
       id: 'editeur',
-      title: '12. Éditeur du service',
+      title: '13. Éditeur du service',
       content: [
         'Le service Manae est actuellement édité par une personne physique, en phase de validation de projet.',
         'Les informations légales seront complétées lors de la création de la structure juridique.',
@@ -397,7 +409,7 @@ export const CGU: LegalPage = {
     },
     {
       id: 'litige',
-      title: '13. Droit applicable',
+      title: '14. Droit applicable',
       content: [
         'Les présentes CGU sont régies par le droit français.',
         'En cas de litige, les tribunaux compétents seront ceux du ressort de Paris, sauf disposition légale contraire.',

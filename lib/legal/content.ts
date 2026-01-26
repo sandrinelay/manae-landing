@@ -21,7 +21,7 @@ export const LEGAL_CONTACT: LegalContact = {
 export const MENTIONS_LEGALES: LegalPage = {
   title: 'Mentions Légales',
   description: 'Informations légales relatives à l\'application Manae',
-  lastUpdate: '2025-12-25',
+  lastUpdate: '2026-01-26',
   sections: [
     {
       id: 'editeur',
@@ -88,7 +88,7 @@ export const MENTIONS_LEGALES: LegalPage = {
 export const CONFIDENTIALITE: LegalPage = {
   title: 'Politique de Confidentialité',
   description: 'Comment Manae collecte, utilise et protège vos données personnelles',
-  lastUpdate: '2025-12-25',
+  lastUpdate: '2026-01-26',
   sections: [
     {
       id: 'introduction',
@@ -291,7 +291,7 @@ export const CONFIDENTIALITE: LegalPage = {
 export const CGU: LegalPage = {
   title: 'Conditions Générales d\'Utilisation',
   description: 'Règles d\'utilisation de l\'application Manae',
-  lastUpdate: '2025-12-25',
+  lastUpdate: '2026-01-26',
   sections: [
     {
       id: 'objet',
@@ -424,7 +424,7 @@ export const CGU: LegalPage = {
 export const CGV: LegalPage = {
   title: 'Conditions Générales de Vente',
   description: 'Conditions de vente de l\'abonnement Manae Plus',
-  lastUpdate: '2025-12-25',
+  lastUpdate: '2026-01-26',
   sections: [
     {
       id: 'objet-cgv',
@@ -505,7 +505,7 @@ export const CGV: LegalPage = {
 export const COOKIES: LegalPage = {
   title: 'Politique de Cookies',
   description: 'Utilisation des cookies sur Manae',
-  lastUpdate: '2025-12-25',
+  lastUpdate: '2026-01-26',
   sections: [
     {
       id: 'definition',

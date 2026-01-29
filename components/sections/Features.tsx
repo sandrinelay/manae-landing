@@ -39,7 +39,7 @@ export const Features: React.FC = () => {
 
           <FeatureItem
              title="Agis au bon moment"
-             description="Manae te suggère quand faire quoi, selon ton agenda et ton énergie. Sans pression."
+             description="Connecté à Google Calendar, Manae te suggère quand faire quoi, selon ton agenda et ton énergie."
              icon={Calendar}
           />
         </div>

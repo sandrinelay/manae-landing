@@ -3,11 +3,8 @@ import React from 'react';
 import { Button } from '../ui/Button';
 import { AppMainCaptureMockup } from '../mockups/AppMockups';
 import { ArrowRight, Sparkles } from 'lucide-react';
-import { useSmoothScroll } from '@/hooks/useSmoothScroll';
 
 export const Hero: React.FC = () => {
-  const { scrollToFinalCta, scrollToFeatures } = useSmoothScroll();
-
   return (
     <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
       {/* Background Elements */}
@@ -36,12 +33,16 @@ export const Hero: React.FC = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" icon={<ArrowRight size={20} />} onClick={scrollToFinalCta}>
-                Rejoindre la liste d'attente
-              </Button>
-              <Button size="lg" variant="ghost" onClick={scrollToFeatures}>
-                En savoir plus
-              </Button>
+              <a href="https://my.manae.app/signup">
+                <Button size="lg" icon={<ArrowRight size={20} />}>
+                  S'inscrire gratuitement
+                </Button>
+              </a>
+              <a href="#features">
+                <Button size="lg" variant="ghost">
+                  En savoir plus
+                </Button>
+              </a>
             </div>
           </div>
 

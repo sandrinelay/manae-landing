@@ -1,4 +1,4 @@
-import { WaitlistFormInline } from "@/components/waitlist/WaitlistFormInline";
+import { ArrowRight } from "lucide-react";
 
 export function FinalCTA() {
   return (
@@ -11,30 +11,19 @@ export function FinalCTA() {
           </h2>
 
           <p className="text-lg md:text-xl opacity-90 mb-12 max-w-2xl mx-auto">
-          Rejoins la bêta gratuite pendant 6 mois. Dépose tes pensées, respire.
+          Rejoins la bêta gratuite. Dépose tes pensées, respire.
           </p>
 
-          {/* TODO: Restaurer le bouton signup après la beta
-          ============================================
-          Supprimer le composant WaitlistFormInline et décommenter le code ci-dessous :
-
-          import Link from "next/link";
-          import { Button } from "@/components/ui/Button";
-
-          <Button
-            variant="white"
-            size="lg"
-            className="text-primary-600 text-[purple] px-10"
+          <a
+            href="https://my.manae.app/signup"
+            className="inline-flex items-center justify-center rounded-full font-medium transition-all duration-200 px-8 py-4 text-lg bg-white text-[#4A7488] hover:bg-neutral-50 shadow-md"
           >
-            <Link href="/auth/signup">
-              Commencer gratuitement
-            </Link>
-          </Button>
-          ============================================ */}
-          <WaitlistFormInline />
+            Créer mon compte gratuitement
+            <span className="ml-2"><ArrowRight size={20} /></span>
+          </a>
 
           <p className="mt-8 text-sm opacity-75">
-            Accès bêta limité aux 100 premiers utilisateurs — ouverture progressive
+            Les 100 premiers inscrits bénéficient du plan Plus gratuit à vie !
           </p>
         </div>
       </div>

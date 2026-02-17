@@ -1,5 +1,5 @@
-import { SignUp } from "@/components/auth/SignUp";
+import { redirect } from "next/navigation";
 
 export default function SignupPage() {
-  return <SignUp />;
+  redirect("https://my.manae.app/signup");
 }

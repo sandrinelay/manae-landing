@@ -21,7 +21,7 @@ export const LEGAL_CONTACT: LegalContact = {
 export const MENTIONS_LEGALES: LegalPage = {
   title: 'Mentions Légales',
   description: 'Informations légales relatives à l\'application Manae',
-  lastUpdate: '2026-01-29',
+  lastUpdate: '2026-02-25',
   sections: [
     {
       id: 'editeur',
@@ -91,7 +91,7 @@ export const MENTIONS_LEGALES: LegalPage = {
 export const CONFIDENTIALITE: LegalPage = {
   title: 'Politique de Confidentialité',
   description: 'Comment Manae collecte, utilise et protège vos données personnelles',
-  lastUpdate: '2026-01-29',
+  lastUpdate: '2026-02-25',
   sections: [
     {
       id: 'introduction',
@@ -138,7 +138,7 @@ export const CONFIDENTIALITE: LegalPage = {
         {
           id: 'integrations',
           title: '3.3 Intégrations optionnelles',
-          content: 'Données issues de Google Calendar (événements uniquement), uniquement si l\'utilisateur active volontairement l\'intégration',
+          content: 'Données issues de Google Calendar (liste des calendriers et événements), uniquement si l\'utilisateur active volontairement l\'intégration depuis l\'application.',
         },
         {
           id: 'techniques',
@@ -197,9 +197,23 @@ export const CONFIDENTIALITE: LegalPage = {
           id: 'google',
           title: '6.2 Google (Google Calendar API)',
           content: [
-            'Finalité : synchronisation des événements',
-            'Accès : uniquement si l\'utilisateur active l\'intégration',
-            'Traitement conforme à la politique de confidentialité de Google',
+            'Finalité : permettre à l\'utilisateur d\'afficher ses calendriers Google et leurs événements au sein de Manae, de consulter ses disponibilités, et de planifier des tâches directement dans son agenda Google Calendar avec synchronisation bidirectionnelle.',
+            'Scopes utilisés :',
+            '— https://www.googleapis.com/auth/calendar.events : lecture, création, modification et suppression des événements',
+            '— https://www.googleapis.com/auth/calendar.calendarlist.readonly : lecture de la liste des calendriers de l\'utilisateur (en lecture seule)',
+            'Données Google accédées :',
+            '— Liste des calendriers de l\'utilisateur (noms, couleurs, identifiants — lecture seule)',
+            '— Événements des calendriers sélectionnés (lecture complète pour affichage de l\'agenda et identification des créneaux disponibles)',
+            '— Création, modification et suppression d\'événements (pour planifier les tâches de l\'utilisateur)',
+            '— Notifications en temps réel des modifications du calendrier (pour la synchronisation bidirectionnelle : si un événement créé par Manae est supprimé dans Google Calendar, il est également supprimé dans Manae)',
+            'Accès conditionnel : l\'intégration Google Calendar est entièrement optionnelle. Les données ne sont accessibles que si l\'utilisateur l\'active volontairement depuis l\'application.',
+            'Absence de partage et de vente : les données issues de Google Calendar ne sont ni vendues, ni transmises à des tiers (régies publicitaires, data brokers, revendeurs), y compris OpenAI. Elles ne sont utilisées que pour la fonctionnalité de planification au sein de Manae.',
+            'Stockage limité : les tokens d\'accès Google sont conservés uniquement dans le navigateur de l\'utilisateur (localStorage). Les contenus des événements (titre, description, participants) ne sont ni stockés sur les serveurs de Manae, ni enregistrés en base de données. Seul l\'identifiant technique d\'un événement Google Calendar (google_event_id) peut être enregistré en base de données lorsqu\'une tâche Manae est planifiée, afin de permettre sa mise à jour ou sa suppression ultérieure.',
+            'Non-utilisation à d\'autres fins : les données Google ne sont utilisées qu\'aux fins déclarées (affichage de l\'agenda, gestion des disponibilités, création et suppression d\'événements, synchronisation bidirectionnelle). Elles ne servent pas à l\'entraînement de modèles d\'IA généraux, au profilage, à des fins publicitaires, ni à l\'évaluation de crédit ou à des décisions financières.',
+            'Restriction d\'accès humain : aucune personne de l\'équipe Manae — y compris la fondatrice — ni aucun employé, prestataire ou agent ne peut consulter les données Google Calendar de l\'utilisateur, sauf dans les cas suivants : (1) accord explicite de l\'utilisateur, (2) nécessité pour des raisons de sécurité ou de débogage, (3) obligation légale. Ces accès exceptionnels sont documentés et limités au strict nécessaire.',
+            'Révocation : l\'utilisateur peut révoquer l\'accès à tout moment depuis son profil dans l\'application, ou directement depuis son compte Google (myaccount.google.com/permissions).',
+            'Conformité : l\'utilisation par Manae des données obtenues via les API Google est conforme à la politique d\'utilisation des données des services API Google, y compris les exigences d\'utilisation limitée (Google API Services User Data Policy, Limited Use Policy) : https://developers.google.com/terms/api-services-user-data-policy',
+            'Politique de confidentialité de Google : https://policies.google.com/privacy',
           ],
         },
         {
@@ -207,7 +221,7 @@ export const CONFIDENTIALITE: LegalPage = {
           title: '6.3 Supabase',
           content: [
             'Finalité : hébergement sécurisé des données',
-            'Localisation : Union européenne (selon configuration)',
+            'Localisation : Union européenne (eu-west-1, Irlande)',
             'Mesures de sécurité renforcées',
           ],
         },
@@ -234,7 +248,8 @@ export const CONFIDENTIALITE: LegalPage = {
         'Droit à l\'effacement : vous pouvez supprimer votre compte directement depuis votre profil via le bouton "Supprimer mon compte"',
         'Droit à la portabilité : vous pouvez exporter toutes vos données depuis votre profil via le bouton "Exporter mes données"',
         'Droit d\'opposition',
-        'Droit à la limitation du traitement',
+        'Droit à la limitation du traitement : vous pouvez demander la suspension du traitement de vos données en écrivant à contact@manae.app',
+        'Droit de retrait du consentement : lorsque le traitement est fondé sur votre consentement (ex. connexion Google Calendar), vous pouvez le retirer à tout moment, sans que cela remette en cause les traitements effectués avant ce retrait.',
       ],
     },
     {
@@ -257,7 +272,7 @@ export const CONFIDENTIALITE: LegalPage = {
         'Chiffrement des données en transit (HTTPS)',
         'Chiffrement des données au repos',
         'Authentification sécurisée',
-        'Accès restreint aux données',
+        'Contrôle d\'accès strict (Row Level Security) : chaque utilisateur ne peut accéder qu\'à ses propres données depuis l\'application. L\'équipe Manae peut accéder aux données dans le cadre de l\'administration technique du service (support, débogage, obligations légales), dans le respect du RGPD.',
         'Sauvegardes régulières',
       ],
     },
@@ -296,7 +311,7 @@ export const CONFIDENTIALITE: LegalPage = {
 export const CGU: LegalPage = {
   title: 'Conditions Générales d\'Utilisation',
   description: 'Règles d\'utilisation de l\'application Manae',
-  lastUpdate: '2026-01-29',
+  lastUpdate: '2026-02-25',
   sections: [
     {
       id: 'objet',
@@ -310,7 +325,7 @@ export const CGU: LegalPage = {
       id: 'service',
       title: '2. Présentation du service',
       content: [
-        'Manae est une application numérique d’assistance à l’organisation personnelle, permettant de capturer, structurer et planifier des informations (idées, tâches, rappels, contenus personnels) à l’aide de fonctionnalités d’automatisation et d’intelligence artificielle.',
+        'Manae est une application numérique d’assistance à l’organisation personnelle, permettant de capturer, structurer et planifier des informations (idées, tâches, rappels, contenus personnels) à l’aide de fonctionnalités d’automatisation et d’intelligence artificielle, avec possibilité de connexion optionnelle à Google Calendar pour visualiser son agenda et planifier des tâches directement depuis Manae.',
         'Manae s’adresse à toute personne majeure souhaitant mieux organiser son quotidien, sans ciblage exclusif d’un profil ou d’un usage spécifique.',
         'Manae ne constitue ni un service médical, psychologique, juridique ou professionnel, ni un outil de diagnostic ou de prise de décision critique.',
       ],
@@ -434,7 +449,7 @@ export const CGU: LegalPage = {
 export const CGV: LegalPage = {
   title: 'Conditions Générales de Vente',
   description: 'Conditions de vente de l\'abonnement Manae Plus',
-  lastUpdate: '2026-01-29',
+  lastUpdate: '2026-02-25',
   sections: [
     {
       id: 'objet-cgv',
@@ -515,7 +530,7 @@ export const CGV: LegalPage = {
 export const COOKIES: LegalPage = {
   title: 'Politique de Cookies',
   description: 'Utilisation des cookies sur Manae',
-  lastUpdate: '2026-01-29',
+  lastUpdate: '2026-02-25',
   sections: [
     {
       id: 'definition',
